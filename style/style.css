@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --value-height: 1000px;
+}
+h1{
+    font-size: clamp(3em, 3em + 3vw, 5.5em);
+}
+p{
+    font-size: clamp(1em, 1em + 3vw, 2.5em);
+    line-height: 1.5em;
+}
+.normal-text{
+    font-size: 1em;
+    line-height: 1.2em;
+}
+header{
+    text-align: center;
+    background-color: rgba(36, 33, 33, 0.824);
+    color: white;
+    padding: 50px;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
+#pt1{
+    background: black url('../images/estrada.jpg') center center/cover no-repeat fixed;
+    height: var(--value-height);
+    position: relative;
+    box-shadow: 4px -2px 10px 0px rgb(0 0 0 / 78%);
+}
+#pt3{
+    background: black url('../images/estrada\ sol.jpg') center center/cover no-repeat fixed;
+    height: var(--value-height);
+    position: relative;
+    box-shadow: 4px -2px 10px 0px rgb(0 0 0 / 78%);
+}
+#pt5{
+    background: black url('../images/estrada\ complexa\ 1920.jpg') center center/cover no-repeat fixed;
+    height: var(--value-height);
+    position: relative;
+    box-shadow: 4px -2px 10px 0px rgb(0 0 0 / 78%);
+}
+#pt2{
+    height: var(--value-height);
+    position: relative;
+    box-shadow: inset -1px -1px 6px 0px rgb(0 0 0 / 25%);
+}
+#pt4{
+    height: var(--value-height);
+    position: relative;
+    box-shadow: inset -1px -1px 6px 0px rgb(0 0 0 / 25%);
+}
+
+.background-image{
+    padding: 20px;
+    margin: 20px;
+    background: rgba(0, 0, 0, 0.333);
+    border-radius: 20px;
+    color: white;
+}
+.background-image-reverse{
+    padding: 20px;
+    margin: 20px;
+    background: rgba(79, 76, 76, 0.68);
+    border-radius: 20px;
+    color: white;
+}
+.background-solid{
+    padding: 20px;
+    margin: 20px;
+}
+
+p.background-image, p.background-image-reverse{
+    position: absolute;
+    top: 50%;
+
+    transform: translate( 0%, -52.5%);
+}
+p.background-solid{
+    position: absolute;
+    top: 50%;
+
+    transform: translate( 0%, -53%);
+}
+footer{
+    color: white;
+    text-align: center;
+
+    position: absolute;
+    bottom: 0%;
+
+    padding: 30px 0px;
+
+    background-color: rgba(255, 255, 255, 0.065);
+
+    width: 100%;
+}
